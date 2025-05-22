@@ -1,0 +1,16 @@
+#hamburger {
+  display: none;
+}
+
+nav {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.album-grid {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+}
