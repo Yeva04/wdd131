@@ -57,18 +57,37 @@ header {
 
 }
 
-.data h2,
-.weather h2 {
+.data h2{
   background-color: var(--green);
   color: white;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.weather-icon {
-  font-size: 1.6rem;
+.weather h2 {
+  background-color: var(--green);
+  color: white;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: flex;
 }
 
+.weather-icon {
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .weather h2::after {
+    font-size: 1.6rem; /* Match .weather-icon */
+    color: var(--white);
+    position: absolute;
+    margin-left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center icon */
+  }
+}
 
 footer {
   position: relative;
