@@ -2,7 +2,7 @@
   --red: #d62828;
   --green: #007a3d;
   --white: #ffffff;
-  --font: 'Segoe UI', sans-serif;
+  --font: 'Roboto', 'Segoe UI', sans-serif; /* Updated to include Roboto */
 }
 
 * {
@@ -33,8 +33,14 @@ header {
 
 .hero picture img {
   width: 100%;
-  height: 50%;
+  height: auto;
   display: block;
+}
+
+@media (max-width: 767px) {
+  .weather-icon {
+    display: none; /* Hide icon in mobile view */
+  }
 }
 
 /* Mobile-first default layout */
