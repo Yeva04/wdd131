@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Place website">
+  <meta name="author" content="Ojobor Favour Ogayicha">
+  <title>Madagascar</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Madagascar</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/madagascar-large.webp" media="(min-width: 768px)">
+        <img src="images/madagascar-small.webp" alt="Lemurs in Madagascar">
+      </picture>
+
+      <div class="overlay-container">
+        <div class="overlay data">
+          <h2>Data</h2>
+          <ul>
+            <p><strong>Area:</strong> 587,041 sq km</p>
+            <p><strong>Population:</strong> 27,691,018</p>
+            <p><strong>Capital:</strong> Antananarivo</p>
+            <p><strong>Languages:</strong> Malagasy, French</p>
+            <p><strong>Currency:</strong> Malagasy Ariary</p>
+            <p><strong>Time Zone:</strong> UTC+3</p>
+            <p><strong>Calling Code:</strong> +261</p>
+            <p><strong>Internet TLD:</strong> .mg</p>
+          </ul>
+        </div>
+
+        <div class="overlay weather">
+          <h2>Weather <span class="weather-icon">⛅</span></h2>
+          <ul>
+            <p><strong>Temperature:</strong> <span id="temp">10</span>°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="chill">N/A</span></p>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+
+  <footer>
+    <p>&copy; <span id="year"></span> 🌸 Rubia Magdelena Francesco 🌍 Madagascar</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+
