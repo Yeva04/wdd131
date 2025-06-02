@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madagascar Wildlife Hub - Mobile Wireframe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #5D4037; /* Earth Brown */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2E7D32; /* Forest Green */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .logo {
+      background-color: #f9f9f9;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+    }
+    .hamburger {
+      font-size: 1.5rem;
+      color: white;
+      background: none;
+      border: none;
+    }
+    nav {
+      display: none; /* Collapsed by default */
+      background-color: #2E7D32;
+      flex-direction: column;
+    }
+    nav a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .hero {
+      background-color: #ccc;
+      height: 150px;
+      text-align: center;
+      line-height: 150px;
+    }
+    .welcome {
+      padding: 10px;
+    }
+    .welcome h2 {
+      font-family: 'Merriweather', serif;
+      color: #2E7D32;
+    }
+    .species-card {
+      background-color: #f9f9f9;
+      border: 1px solid #5D4037;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    .species-card .image {
+      background-color: #ccc;
+      height: 100px;
+    }
+    footer {
+      background-color: #2E7D32;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Logo</div>
+    <button class="hamburger">☰</button>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Species</a>
+    <a href="#">Conservation</a>
+    <a href="#">Get Involved</a>
+  </nav>
+  <main>
+    <div class="hero">Hero Image</div>
+    <div class="welcome">
+      <h2>Welcome</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="species-card">
+      <div class="image">Species Image</div>
+      <p>Species Name</p>
+      <p>Status</p>
+    </div>
+  </main>
+  <footer>
+    <p>Contact | Social Media | © 2025</p>
+  </footer>
+</body>
+</html>
