@@ -3,73 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
-  <meta name="description" content="WDD 131 – Temple album project">
+  <meta name="description" content="WDD 169 - Filtered Temple Album">
   <meta name="author" content="Ojobor Favour Ogayicha">
-  <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
-  <script src="scripts/temples.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Filtered Temple Album</title>
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts Embed -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
 </head>
-
 <body>
   <header>
-    <h1>Temple Album</h1>
-    <button id="hamburger">&#9776;</button>
+    <h1>Filtered Temple Album</h1>
+    <button id="hamburger">☰</button>
     <nav id="nav-menu">
-      <a href="#">Home</a>
-      <a href="#">Old</a>
-      <a href="#">New</a>
-      <a href="#">Large</a>
-      <a href="#">Small</a>
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
     </nav>
   </header>
-
   <main>
-  <h2>Home</h2>
-  <section class="album-grid">
-    <figure>
-      <img src="images/temple.webp" alt="San Diego California Temple">
-      <figcaption>San Diego California</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple2.webp" alt="Salt Lake City Utah Temple">
-      <figcaption>Salt Lake City Utah</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple3.webp" alt="Accra Ghana Temple">
-      <figcaption>Accra Ghana</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple4.webp" alt="Aba Nigeria Temple">
-      <figcaption>Aba Nigeria</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple5.webp" alt="Lima Peru Temple">
-      <figcaption>Lima Peru</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple6.webp" alt="Rome Italy Temple">
-      <figcaption>Rome Italy</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple7.webp" alt="Paris France Temple">
-      <figcaption>Paris France</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple8.webp" alt="Tokyo Japan Temple">
-      <figcaption>Tokyo Japan</figcaption>
-    </figure>
-    <figure>
-      <img src="images/temple9.webp" alt="Durban South Africa Temple">
-      <figcaption>Durban South Africa</figcaption>
-    </figure>
-  </section>
-</main>
-
-
+    <h2 id="page-title">Home</h2>
+    <section class="album-grid" id="temple-grid"></section>
+  </main>
   <footer>
-    <p>&copy; <span id="year"></span> 🌸 Rubia Magdelena Francesco 🌍 Madagascar</p>
+    <p>© <span id="year"></span> 🌸 Ojobor Favour Ogayicha 🌍 Nigeria</p>
     <p>Last Modification: <span id="lastModified"></span></p>
   </footer>
 </body>

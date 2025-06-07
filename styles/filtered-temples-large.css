@@ -8,9 +8,18 @@
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    padding: 0 1rem;
+    background: #4b0082;
   }
 
-  .album-grid {
+  nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+
+  #temple-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     max-width: 960px;
     margin: 0 auto;
