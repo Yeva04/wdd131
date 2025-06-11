@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore endangered species of Madagascar, including lemurs and chameleons">
+  <meta name="author" content="Ojobor Favour Ogayicha">
+  <title>Species | Madagascar Wildlife Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Madagascar Wildlife Hub Logo" loading="lazy"></a>
+    <button class="hamburger" aria-label="Toggle navigation">☰</button>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="species.html" class="active">Species</a></li>
+        <li><a href="conservation.html">Conservation</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="species">
+      <h1>Endangered Species</h1>
+      <div class="filter">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="lemur">Lemurs</button>
+        <button data-filter="chameleon">Chameleons</button>
+      </div>
+      <div class="species-grid" id="species-grid"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>Contact: info@madagascarwildlife.org</p>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+        <a href="#" aria-label="Instagram">IG</a>
+      </div>
+      <p>© <span id="year"></span> | <a href="references.html">References</a> | Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
